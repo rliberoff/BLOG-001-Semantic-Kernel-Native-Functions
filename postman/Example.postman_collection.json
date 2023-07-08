@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "28f32f62-9479-4880-ae70-c02b49092576",
+		"name": "Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24498958",
+		"_collection_link": "https://planetary-meadow-26954.postman.co/workspace/Team-Workspace~1ee4480c-8dc7-4fee-8b34-bac0db8390fa/collection/24498958-28f32f62-9479-4880-ae70-c02b49092576?action=share&creator=24498958&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Ask Question with Context",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputs\": \r\n        {\r\n            \"question\": \"asdgasdgsdgsdgf\",\r\n            \"context\": \"The Amazon rainforest (Portuguese: Floresta Amazônica or Amazônia; Spanish: Selva Amazónica, Amazonía or usually Amazonia; French: Forêt amazonienne; Dutch: Amazoneregenwoud), also known in English as Amazonia or the Amazon Jungle, is a moist broadleaf forest that covers most of the Amazon basin of South America. This basin encompasses 7,000,000 square kilometres (2,700,000 sq mi), of which 5,500,000 square kilometres (2,100,000 sq mi) are covered by the rainforest. This region includes territory belonging to nine nations. The majority of the forest is contained within Brazil, with 60% of the rainforest, followed by Peru with 13%, Colombia with 10%, and with minor amounts in Venezuela, Ecuador, Bolivia, Guyana, Suriname and French Guiana. States or departments in four nations contain \\\"Amazonas\\\" in their names. The Amazon represents over half of the planet's remaining rainforests, and comprises the largest and most biodiverse tract of tropical rainforest in the world, with an estimated 390 billion individual trees divided into 16,000 species.\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-inference.huggingface.co/models/deepset/roberta-base-squad2",
+					"protocol": "https",
+					"host": [
+						"api-inference",
+						"huggingface",
+						"co"
+					],
+					"path": [
+						"models",
+						"deepset",
+						"roberta-base-squad2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
